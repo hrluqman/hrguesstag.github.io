@@ -1,7 +1,3 @@
-// const popularTag = ["food", "drinks", "sports", "tech", "fashion"];
-// const popularTag = ["malaysia", "singapore", "asia", "china", "australia"];
-
-// const popularTag4 = ["island", "beach", "mountain", "nutrition", "health"];
 const popularTag = ["nature", "landscape", "mountain", "animals", "island"];
 const buttonNum = [0,1,2,3];
 let randomPopular = [];
@@ -30,8 +26,6 @@ function randomOne() {
     }
     console.log(randomBtn);
 
-    // var position = buttonNum[Math.floor(Math.random() * buttonNum.length)];
-    // console.log("Random Index: ",position);
     return [randomBtn[0], randomBtn[1], randomBtn[2], randomBtn[3]]
 }
 
@@ -82,7 +76,7 @@ function getTerm(tagName) {
         const items = result.response;
 
         for(let i = 0; i < items.length; i++){
-            const item = items[i]; // let item receive everythin in items[i]
+            const item = items[i]; // let item receive everything in items[i]
 
             if(item.photos != undefined){
 
