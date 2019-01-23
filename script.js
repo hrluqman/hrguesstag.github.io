@@ -14,6 +14,7 @@ randomButton(codes[0], codes[1], codes[2], codes[3]);
 getTerm(randomTag());
 
 
+// Make number of index random
 function randomOne() {
 
     let i = buttonNum.length;
@@ -29,6 +30,7 @@ function randomOne() {
     return [randomBtn[0], randomBtn[1], randomBtn[2], randomBtn[3]]
 }
 
+// Make array position of button random
 function randomButton(randomNum, randomNum2, randomNum3, randomNum4){
 
     let i = popularTag.length;
@@ -49,6 +51,7 @@ function randomButton(randomNum, randomNum2, randomNum3, randomNum4){
 }
 
 
+// Make array of tag random
 function randomTag() {
     let i = popularTag.length;
     let index = 0;
@@ -64,6 +67,7 @@ function randomTag() {
 };
 
 
+// Display the randomize picked tag
 function getTerm(tagName) {
     fetch("https://api.tumblr.com/v2/tagged?tag=" + tagName + "&api_key=3ZZjiejGpvmRmlsEwphrVIlXJgVifeCgHcByh1Qk6EbdQWRjHZ")
     .then(function(response){
@@ -99,7 +103,7 @@ function getTerm(tagName) {
 }
 
 
-
+// Determine wether the the word of a button is the same as the chosen tag
 buttonOne.onclick = function(){
 
 
